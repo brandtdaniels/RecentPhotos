@@ -7,12 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1140ADD9808FE71E62294B68 /* Pods_RecentPhotosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A3AE2080BD5CF7E206359E9 /* Pods_RecentPhotosTests.framework */; };
 		3DB758DC2257D5E70053E364 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB758DB2257D5E70053E364 /* AppDelegate.swift */; };
-		3DB758DE2257D5E70053E364 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB758DD2257D5E70053E364 /* ViewController.swift */; };
 		3DB758E12257D5E70053E364 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DB758DF2257D5E70053E364 /* Main.storyboard */; };
 		3DB758E32257D5EC0053E364 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB758E22257D5EC0053E364 /* Assets.xcassets */; };
 		3DB758E62257D5EC0053E364 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DB758E42257D5EC0053E364 /* LaunchScreen.storyboard */; };
 		3DB758F12257D5EC0053E364 /* RecentPhotosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB758F02257D5EC0053E364 /* RecentPhotosTests.swift */; };
+		3DB759072257D75F0053E364 /* RecentPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB758FC2257D75F0053E364 /* RecentPhotoCell.swift */; };
+		3DB759082257D75F0053E364 /* RecentPhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB758FD2257D75F0053E364 /* RecentPhotos.swift */; };
+		3DB759092257D75F0053E364 /* RecentPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB758FE2257D75F0053E364 /* RecentPhotosViewController.swift */; };
+		3DB7590A2257D75F0053E364 /* RecentPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB758FF2257D75F0053E364 /* RecentPhotoViewController.swift */; };
+		3DB7590B2257D75F0053E364 /* Flickr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB759012257D75F0053E364 /* Flickr.swift */; };
+		3DB7590C2257D75F0053E364 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB759022257D75F0053E364 /* HttpClient.swift */; };
+		3DB7590D2257D75F0053E364 /* GetRecentResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB759042257D75F0053E364 /* GetRecentResult.swift */; };
+		3DB7590E2257D75F0053E364 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB759052257D75F0053E364 /* Photo.swift */; };
+		3DB7590F2257D75F0053E364 /* PhotoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB759062257D75F0053E364 /* PhotoList.swift */; };
+		BAAB3C27D305BADD8F56EB9A /* Pods_RecentPhotos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02E89F38A954417A3A9C70FB /* Pods_RecentPhotos.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02E89F38A954417A3A9C70FB /* Pods_RecentPhotos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RecentPhotos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		081C1D64134787CDB23CF642 /* Pods-RecentPhotos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecentPhotos.release.xcconfig"; path = "Target Support Files/Pods-RecentPhotos/Pods-RecentPhotos.release.xcconfig"; sourceTree = "<group>"; };
+		1A3AE2080BD5CF7E206359E9 /* Pods_RecentPhotosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RecentPhotosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DB758D82257D5E70053E364 /* RecentPhotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecentPhotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DB758DB2257D5E70053E364 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3DB758DD2257D5E70053E364 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3DB758E02257D5E70053E364 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3DB758E22257D5EC0053E364 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DB758E52257D5EC0053E364 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +48,18 @@
 		3DB758EC2257D5EC0053E364 /* RecentPhotosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecentPhotosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DB758F02257D5EC0053E364 /* RecentPhotosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentPhotosTests.swift; sourceTree = "<group>"; };
 		3DB758F22257D5ED0053E364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DB758FC2257D75F0053E364 /* RecentPhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentPhotoCell.swift; sourceTree = "<group>"; };
+		3DB758FD2257D75F0053E364 /* RecentPhotos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentPhotos.swift; sourceTree = "<group>"; };
+		3DB758FE2257D75F0053E364 /* RecentPhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentPhotosViewController.swift; sourceTree = "<group>"; };
+		3DB758FF2257D75F0053E364 /* RecentPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentPhotoViewController.swift; sourceTree = "<group>"; };
+		3DB759012257D75F0053E364 /* Flickr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flickr.swift; sourceTree = "<group>"; };
+		3DB759022257D75F0053E364 /* HttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		3DB759042257D75F0053E364 /* GetRecentResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetRecentResult.swift; sourceTree = "<group>"; };
+		3DB759052257D75F0053E364 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		3DB759062257D75F0053E364 /* PhotoList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoList.swift; sourceTree = "<group>"; };
+		565E73AAC4742A4F095BD4F4 /* Pods-RecentPhotos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecentPhotos.debug.xcconfig"; path = "Target Support Files/Pods-RecentPhotos/Pods-RecentPhotos.debug.xcconfig"; sourceTree = "<group>"; };
+		F5A683B66F37B599A2A89D15 /* Pods-RecentPhotosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecentPhotosTests.release.xcconfig"; path = "Target Support Files/Pods-RecentPhotosTests/Pods-RecentPhotosTests.release.xcconfig"; sourceTree = "<group>"; };
+		F76329C3E75E8C60CF4FEC3F /* Pods-RecentPhotosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecentPhotosTests.debug.xcconfig"; path = "Target Support Files/Pods-RecentPhotosTests/Pods-RecentPhotosTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAAB3C27D305BADD8F56EB9A /* Pods_RecentPhotos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1140ADD9808FE71E62294B68 /* Pods_RecentPhotosTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +88,8 @@
 				3DB758DA2257D5E70053E364 /* RecentPhotos */,
 				3DB758EF2257D5EC0053E364 /* RecentPhotosTests */,
 				3DB758D92257D5E70053E364 /* Products */,
+				A8731D1821DA581200A3EC32 /* Pods */,
+				470B205511FA3741DDA2F0BE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,11 +106,12 @@
 			isa = PBXGroup;
 			children = (
 				3DB758DB2257D5E70053E364 /* AppDelegate.swift */,
-				3DB758DD2257D5E70053E364 /* ViewController.swift */,
-				3DB758DF2257D5E70053E364 /* Main.storyboard */,
 				3DB758E22257D5EC0053E364 /* Assets.xcassets */,
-				3DB758E42257D5EC0053E364 /* LaunchScreen.storyboard */,
+				3DB759002257D75F0053E364 /* Flickr Service */,
 				3DB758E72257D5EC0053E364 /* Info.plist */,
+				3DB758E42257D5EC0053E364 /* LaunchScreen.storyboard */,
+				3DB758DF2257D5E70053E364 /* Main.storyboard */,
+				3DB758FB2257D75F0053E364 /* Recent Photos */,
 			);
 			path = RecentPhotos;
 			sourceTree = "<group>";
@@ -96,6 +125,57 @@
 			path = RecentPhotosTests;
 			sourceTree = "<group>";
 		};
+		3DB758FB2257D75F0053E364 /* Recent Photos */ = {
+			isa = PBXGroup;
+			children = (
+				3DB758FC2257D75F0053E364 /* RecentPhotoCell.swift */,
+				3DB758FD2257D75F0053E364 /* RecentPhotos.swift */,
+				3DB758FE2257D75F0053E364 /* RecentPhotosViewController.swift */,
+				3DB758FF2257D75F0053E364 /* RecentPhotoViewController.swift */,
+			);
+			path = "Recent Photos";
+			sourceTree = "<group>";
+		};
+		3DB759002257D75F0053E364 /* Flickr Service */ = {
+			isa = PBXGroup;
+			children = (
+				3DB759012257D75F0053E364 /* Flickr.swift */,
+				3DB759022257D75F0053E364 /* HttpClient.swift */,
+				3DB759032257D75F0053E364 /* Models */,
+			);
+			path = "Flickr Service";
+			sourceTree = "<group>";
+		};
+		3DB759032257D75F0053E364 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3DB759042257D75F0053E364 /* GetRecentResult.swift */,
+				3DB759052257D75F0053E364 /* Photo.swift */,
+				3DB759062257D75F0053E364 /* PhotoList.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		470B205511FA3741DDA2F0BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02E89F38A954417A3A9C70FB /* Pods_RecentPhotos.framework */,
+				1A3AE2080BD5CF7E206359E9 /* Pods_RecentPhotosTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A8731D1821DA581200A3EC32 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				565E73AAC4742A4F095BD4F4 /* Pods-RecentPhotos.debug.xcconfig */,
+				081C1D64134787CDB23CF642 /* Pods-RecentPhotos.release.xcconfig */,
+				F76329C3E75E8C60CF4FEC3F /* Pods-RecentPhotosTests.debug.xcconfig */,
+				F5A683B66F37B599A2A89D15 /* Pods-RecentPhotosTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +183,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3DB758F52257D5ED0053E364 /* Build configuration list for PBXNativeTarget "RecentPhotos" */;
 			buildPhases = (
+				D926D6A2D92DD8829F4B722B /* [CP] Check Pods Manifest.lock */,
 				3DB758D42257D5E70053E364 /* Sources */,
 				3DB758D52257D5E70053E364 /* Frameworks */,
 				3DB758D62257D5E70053E364 /* Resources */,
+				11D435ADD8636BB9502D1638 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,9 +202,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3DB758F82257D5ED0053E364 /* Build configuration list for PBXNativeTarget "RecentPhotosTests" */;
 			buildPhases = (
+				F3C34E9DDB2E4AB30C998C6C /* [CP] Check Pods Manifest.lock */,
 				3DB758E82257D5EC0053E364 /* Sources */,
 				3DB758E92257D5EC0053E364 /* Frameworks */,
 				3DB758EA2257D5EC0053E364 /* Resources */,
+				EBD629924E3A8C8F99A8D25C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -192,13 +276,114 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		11D435ADD8636BB9502D1638 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RecentPhotos/Pods-RecentPhotos-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RecentPhotos/Pods-RecentPhotos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D926D6A2D92DD8829F4B722B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RecentPhotos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBD629924E3A8C8F99A8D25C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RecentPhotosTests/Pods-RecentPhotosTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RecentPhotosTests/Pods-RecentPhotosTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3C34E9DDB2E4AB30C998C6C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RecentPhotosTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3DB758D42257D5E70053E364 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DB758DE2257D5E70053E364 /* ViewController.swift in Sources */,
+				3DB7590F2257D75F0053E364 /* PhotoList.swift in Sources */,
+				3DB7590D2257D75F0053E364 /* GetRecentResult.swift in Sources */,
+				3DB7590A2257D75F0053E364 /* RecentPhotoViewController.swift in Sources */,
+				3DB759082257D75F0053E364 /* RecentPhotos.swift in Sources */,
+				3DB7590C2257D75F0053E364 /* HttpClient.swift in Sources */,
+				3DB7590E2257D75F0053E364 /* Photo.swift in Sources */,
+				3DB759072257D75F0053E364 /* RecentPhotoCell.swift in Sources */,
 				3DB758DC2257D5E70053E364 /* AppDelegate.swift in Sources */,
+				3DB7590B2257D75F0053E364 /* Flickr.swift in Sources */,
+				3DB759092257D75F0053E364 /* RecentPhotosViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,9 +543,12 @@
 		};
 		3DB758F62257D5ED0053E364 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 565E73AAC4742A4F095BD4F4 /* Pods-RecentPhotos.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = RecentPhotos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -368,16 +556,20 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.brandtdaniels.RecentPhotos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		3DB758F72257D5ED0053E364 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 081C1D64134787CDB23CF642 /* Pods-RecentPhotos.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = RecentPhotos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -385,17 +577,20 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.brandtdaniels.RecentPhotos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		3DB758F92257D5ED0053E364 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F76329C3E75E8C60CF4FEC3F /* Pods-RecentPhotosTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = RecentPhotosTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -404,6 +599,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.brandtdaniels.RecentPhotosTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecentPhotos.app/RecentPhotos";
@@ -412,10 +608,12 @@
 		};
 		3DB758FA2257D5ED0053E364 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5A683B66F37B599A2A89D15 /* Pods-RecentPhotosTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = RecentPhotosTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -424,6 +622,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.brandtdaniels.RecentPhotosTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecentPhotos.app/RecentPhotos";
